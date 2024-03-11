@@ -1,0 +1,6 @@
+@import './jumbotron.css';
+@import './blog-list.css';
+
+.main-content > * + * {
+  margin-top: 70px;
+}

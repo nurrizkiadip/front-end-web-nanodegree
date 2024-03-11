@@ -1,0 +1,50 @@
+/* SM: minimum viewport width 576px or above */
+@media screen and (width >= 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  /* BEGIN OF HEADER */
+  /* END OF HEADER */
+}
+
+/* MD: minimum viewport width 768px or above */
+@media screen and (width >= 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .blog-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* BEGIN OF HEADER */
+  /* END OF HEADER */
+
+  /* BEGIN OF MAIN */
+  /* END OF MAIN */
+}
+
+/* LG: minimum viewport width 992px or above */
+@media screen and (width >= 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  /* BEGIN OF HEADER */
+  /* END OF HEADER */
+
+  /* BEGINNING OF MAIN */
+
+  /* END OF MAIN */
+}
+
+/* XL: minimum viewport width 1200px or above */
+@media screen and (width >= 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  /* BEGIN OF MAIN */
+  /* END OF MAIN */
+}

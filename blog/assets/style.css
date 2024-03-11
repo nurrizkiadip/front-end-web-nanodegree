@@ -1,0 +1,50 @@
+@import '/assets/global.css';
+
+@import '/assets/header.css';
+@import './main.css';
+@import '/assets/footer.css';
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-areas:
+    'header'
+    'main'
+    'aside'
+    'footer';
+
+  gap: 40px 30px;
+}
+
+.grid.container {
+  padding-block: 0;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* MD: minimum viewport width 768px or above */
+@media screen and (width >= 768px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    grid-template-areas:
+      'header header header'
+      'main main aside'
+      'footer footer footer';
+  }
+}

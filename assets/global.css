@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 8px 16px;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+button {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+
+  background-color: transparent;
+  border-radius: 6px;
+  border: 2px solid #00000022;
+
+  transition: 150ms ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2d3e50;
+  color: #fff;
+}
+
+button:focus-visible {
+  outline: none;
+  background-color: initial;
+
+  box-shadow: 0 0 0 4px #00000077;
+}
+
+button.dark-btn {
+  background-color: #2d3e50;
+  color: white;
+}
+
+button.dark-btn:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  display: block;
+
+  border-radius: 4px;
+  border: 1px solid #1e2834;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+
+  transition: 150ms linear;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  box-shadow: 0 0 0 4px #33333355;
+  outline: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px 8px;
+  border: 1px solid #00000055;
+  border-radius: 6px;
+
+  transition: 0.25s ease-in-out;
+}
+
+/* SM: minimum viewport width 576px or above */
+@media screen and (width >= 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* MD: minimum viewport width 768px or above */
+@media screen and (width >= 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* LG: minimum viewport width 992px or above */
+@media screen and (width >= 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* XL: minimum viewport width 1200px or above */
+@media screen and (width >= 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

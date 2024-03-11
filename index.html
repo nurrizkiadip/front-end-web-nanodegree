@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Blog Website</title>
+
+    <!-- Google Fonts -->
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Playfair Display Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="grid container">
+      <header>
+        <div class="header-content">
+          <nav class="main-nav">
+            <div class="nav-list">
+              <a href="/subscribe">Subscribe</a>
+              <a href="#">About</a>
+            </div>
+            <div>
+              <a href="#">Search</a>
+            </div>
+          </nav>
+
+          <div class="brand-app">
+            <a class="brand-app__name" href="/">Blog Portal</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="main-content">
+          <section id="jumbotron" class="jumbotron">
+            <div class="inner-jumbotron">
+              <div class="jumbotron-content">
+                <h1>Find Your Inspiration on Amazing Blogs</h1>
+                <a class="find-out-more-btn" href="#blogs">Explore</a>
+              </div>
+            </div>
+          </section>
+
+          <section id="blogs" class="blogs">
+            <h2 class="section-title">Find Your Favorite Blogs</h2>
+
+            <div id="blog-list" class="blog-list">
+              <article class="blog-item">
+                <h5 class="blog-item__title" data-blog-category="World">Example Blog Post</h5>
+                <div class="blog-item__date">Nov 12</div>
+                <div class="blog-item__short-description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis
+                  officiis fugit!
+                </div>
+                <div class="blog-item__continue-button">
+                  <a href="/blog-1">Continue reading</a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <hr />
+        <div class="footer-content">
+          <p class="copyright">
+            Dibuat dengan <i class="fas fa-heart"></i> oleh
+            <a href="https://www.linkedin.com/in/nur-rizki-adi-prasetyo-2a2ba0157/">
+              Nur Rizki Adi Prasetyo
+            </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

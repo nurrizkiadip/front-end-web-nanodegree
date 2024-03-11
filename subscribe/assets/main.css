@@ -1,0 +1,35 @@
+.subscribe-form > .input-control + .input-control {
+  margin-top: 1rem;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.input-control {
+  margin-block-start: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.submit-control {
+  display: flex;
+  margin-block-start: 16px;
+  justify-content: end;
+}
+
+/* MD: minimum viewport width 768px or above */
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    width: 75%;
+  }
+}
+
+/* LG: minimum viewport width 992px or above */
+@media screen and (width >= 992px) {
+  .subscribe-form {
+    width: 50%;
+  }
+}
