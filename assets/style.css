@@ -1,0 +1,32 @@
+@import './global.css';
+
+@import './header.css';
+@import './main.css';
+@import './footer.css';
+
+.grid {
+  display: grid;
+
+  grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer';
+
+  gap: 40px 20px;
+}
+
+.grid.container {
+  padding-block: 0;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
